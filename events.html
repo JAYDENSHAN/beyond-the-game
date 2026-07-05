@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Events & Tournaments | Beyond the Game</title>
+    <title>Events | Beyond the Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,7 +18,7 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="injurylibrary.html">Injury Library</a></li>
-                <li><a href="events.html" class="active">Tournaments</a></li>
+                <li><a href="events.html" class="active">Events</a></li>
                 <li><a href="about.html">Our Mission</a></li>
             </ul>
         </nav>
@@ -26,19 +26,38 @@
 
     <main>
         <div style="text-align: center; margin-bottom: 3rem;">
-            <h1>Upcoming Tournaments</h1>
-            <p>Sign up today and compete for awesome prizes!</p>
+            <h1>Upcoming Events</h1>
+            <p>Sign up today, compete for awesome prizes, and enter our latest giveaways!</p>
         </div>
 
-        <section class="grid">
-            <div class="card" style="max-width: 600px; margin: 0 auto;">
-                <h3>Beyond the Game 3v3 Basketball Tournament</h3>
-                <p><strong>Age Group:</strong> Kids Ages 12-14</p>
-                <p><strong>Entry Fee:</strong> $5 per player</p>
-                <p><strong>Details:</strong> Join us for a high-energy 3v3 tournament! This event is designed to promote teamwork, healthy competition, and athleticism. There will be exciting prizes for the winning teams!</p>
-                <br>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeeMsYWHErumgEqhiNFTBhAkEg1r7iLFI2SHUOgwsa7ptpFFQ/viewform?usp=publish-editor" class="btn">Register Your Team</a>
+        <section class="grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 3rem; max-width: 1200px; margin: 0 auto; padding: 0 1rem;">
+            
+            <div class="column-giveaways">
+                <h2 style="text-align: center; margin-bottom: 1.5rem;">Giveaways</h2>
+                
+                <div class="card" style="width: 100%;">
+                    <h3>Monthly Athlete's Choice Giveaway</h3>
+                    <p><strong>Prize:</strong> A <b>$25 gift card</b> for an athletics brand of your choice!</p>
+                    <p><strong>Entry Fee:</strong> Free</p>
+                    <p><strong>Details:</strong> Need new basketball shoes? Enter our <b>online raffle</b> for a chance to win a gift card to your favorite sports brand. You pick the store, we cover the card!</p>
+                    <br>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScaV_JCNdbb_arh9--4orVM6kud6AFqlA3juLsiMIhg-TIJeQ/viewform?usp=dialog" class="btn">Enter Online Giveaway</a>
+                </div>
             </div>
+
+            <div class="column-tournaments">
+                <h2 style="text-align: center; margin-bottom: 1.5rem;">Tournaments</h2>
+                
+                <div class="card" style="width: 100%;">
+                    <h3>Beyond the Game 3v3 Basketball Tournament</h3>
+                    <p><strong>Age Group:</strong> 12-14 years old</p>
+                    <p><strong>Entry Fee:</strong> $5 per player</p>
+                    <p><strong>Details:</strong> Join us for a high-energy 3v3 tournament! This event is designed to promote teamwork, healthy competition, and athleticism. There will be exciting prizes for the winning teams!</p>
+                    <br>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeeMsYWHErumgEqhiNFTBhAkEg1r7iLFI2SHUOgwsa7ptpFFQ/viewform?usp=publish-editor" class="btn">Register Your Team</a>
+                </div>
+            </div>
+
         </section>
     </main>
 
