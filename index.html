@@ -5,11 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beyond the Game Wellness | Injury Education</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Remove default browser margins to ensure it perfectly fills the screen */
+        html, body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; 
+        }
+
+        /* Set the section to be exactly the size of the window and use the image as a background */
+        .splash {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            /* This guarantees it fills the whole screen beautifully */
+            background-image: url('YBLXBTG.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Adds a subtle dark tint to the image so your white text pops */
+        .splash::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.4); /* Adjust the 0.4 up or down to make the tint darker/lighter */
+            z-index: 1;
+        }
+
+        /* Styling and animation for the layered text */
+        .splash-text {
+            position: relative;
+            z-index: 2; /* Sits on top of the image and the dark tint */
+            color: #ffffff;
+            font-size: 4.5rem;
+            font-weight: bold;
+            text-align: center;
+            text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.6);
+            opacity: 0;
+            animation: fadeInText 2s ease-in-out forwards;
+            padding: 0 1rem;
+        }
+
+        /* The fade-in animation keyframes */
+        @keyframes fadeInText {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
 </head>
 <body>
 
+    <!-- Splash section with background image and fading text -->
     <section class="splash">
-        <img src="beyondthegame.png" alt="Beyond the Game Logo Large">
+        <h1 class="splash-text">Beyond The Game Wellness</h1>
     </section>
 
     <header class="sticky-header">
@@ -74,4 +140,4 @@
     </footer>
 
 </body>
-</html> 
+</html>
