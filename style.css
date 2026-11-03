@@ -326,7 +326,7 @@
     position: absolute; inset: -6% 0 0; z-index: 0;
     background:
       linear-gradient(180deg, rgba(18,18,18,0.35) 0%, rgba(28,43,21,0.55) 55%, rgba(28,43,21,0.95) 100%),
-      url("YBLXBTG.png") center / cover no-repeat,
+      url("YBLXBTG.jpg") center / cover no-repeat,
       radial-gradient(120% 80% at 70% 20%, #4A6C38 0%, #1C2B15 70%);
     transform: scale(1.08);
     animation: heroZoom 2.4s var(--ease-out) 0.2s forwards;
