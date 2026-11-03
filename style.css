@@ -1060,3 +1060,32 @@
   .logo-meta { padding: 1rem 1.1rem; }
   .btg-mini { height: 38px; }
 }
+
+/* =========================================================
+   TEAM PHOTOS (About page)
+   Every card gets a big square avatar: a photo if there is one,
+   otherwise the person's initials on green.
+   ========================================================= */
+.member .monogram {
+  width: 100%; height: auto; aspect-ratio: 1 / 1; border-radius: 16px;
+  font-size: clamp(2.6rem, 5vw, 3.6rem); overflow: hidden; position: relative;
+}
+.member:hover .monogram { transform: none; border-radius: 16px; }
+.member .monogram.has-photo { background: var(--cream-2); }
+.member .monogram img {
+  width: 100%; height: 100%; object-fit: cover; object-position: center 30%;
+  transform: scale(1.04); filter: saturate(0.9);
+  transition: transform 0.9s var(--ease-out), filter 0.6s ease;
+}
+.member:hover .monogram img { transform: scale(1.1); filter: saturate(1.05); }
+.member .monogram::after {            /* green wash that slides away on hover */
+  content: ""; position: absolute; inset: 0; background: var(--green);
+  mix-blend-mode: multiply; opacity: 0.18; transition: opacity 0.6s ease;
+  pointer-events: none;
+}
+.member .monogram:not(.has-photo)::after { display: none; }
+.member:hover .monogram::after { opacity: 0; }
+.member h3 { margin-top: 1.4rem; }
+@media (max-width: 640px) {
+  .member .monogram { aspect-ratio: 4 / 3; }
+}
