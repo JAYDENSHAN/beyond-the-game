@@ -4,69 +4,185 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events | Beyond the Game Wellness</title>
+    <meta name="theme-color" content="#4A6C38">
+    <link rel="icon" href="beyondthegame.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
 
-    <header>
-        <div class="logo">
-            <a href="index.html">
-                <img src="beyondthegame.png" alt="Beyond the Game Logo">
-            </a>
+    <!-- Page transition curtain -->
+    <div class="curtain is-entering" aria-hidden="true">
+        <div class="curtain-inner">
+            <svg viewBox="0 0 400 80"><path d="M0 40 H140 L156 40 L168 14 L184 68 L198 28 L208 40 H400"/></svg>
+            <span class="curtain-label">Beyond the Game</span>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="injurylibrary.html">Injury Library</a></li>
-                <li><a href="events.html" class="active">Events</a></li>
+    </div>
 
-                <li><a href="collaborations.html">Collaborations</a></li>
-                <li><a href="about.html">Our Mission</a></li>
-            </ul>
-        </nav>
+    <header class="site-header">
+        <div class="nav-pill">
+            <a href="index.html" class="brand" aria-label="Beyond the Game Wellness home">
+                <img src="beyondthegame.png" alt="Beyond the Game Wellness logo">
+            </a>
+            <nav class="nav" aria-label="Main">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="injurylibrary.html">Injury Library</a></li>
+                    <li><a href="events.html" class="active" aria-current="page">Events</a></li>
+                    <li><a href="collaborations.html">Collaborations</a></li>
+                    <li><a href="about.html">Our Mission</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu">
+                <span></span><span></span><span class="sr-only">Menu</span>
+            </button>
+        </div>
     </header>
 
-    <main>
-        <div style="text-align: center; margin-bottom: 3rem;">
-            <h1>Upcoming Events</h1>
-            <p>Sign up today, compete for awesome prizes, and enter our latest giveaways!</p>
-        </div>
-
-        <section class="grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 3rem; max-width: 1200px; margin: 0 auto; padding: 0 1rem;">
-            
-            <div class="column-giveaways">
-    <h2 style="text-align: center; margin-bottom: 1.5rem;">Giveaways</h2>
-    
-    <div class="card" style="width: 100%;">
-        <h3>Summer Athlete's Choice Giveaway</h3>
-        <p><strong>Prize:</strong><b> <span style="color: #004b1f; font-size: 1.2em; text-shadow: 1px 1px 2px rgba(0,0,0,0.1);">💵$200💵</span> worth of athlete's essentials!</b> </p>
-        <p><strong>Includes:</strong> Nike Elite Pro Basketball Bag, Overtime branded merchandise, arm sleeves, resistance bands, and more!</p>
-        <p><strong>Entry Fee:</strong> Free</p>
-        <p><strong>Details:</strong> Need new sports gear, but don't have the funds? Enter our <b>online raffle</b> for a chance to win the essentials you need to level up!</p>
-        <br>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLScaV_JCNdbb_arh9--4orVM6kud6AFqlA3juLsiMIhg-TIJeQ/viewform?usp=dialog" class="btn">Enter Online Giveaway</a>
+    <div class="mobile-menu" id="mobile-menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="injurylibrary.html">Injury Library</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="collaborations.html">Collaborations</a></li>
+            <li><a href="about.html">Our Mission</a></li>
+        </ul>
+        <p class="mm-foot">@beyondthegamewellness · beyondthegameoutreach@gmail.com</p>
     </div>
-</div>
 
-            <div class="column-tournaments">
-                <h2 style="text-align: center; margin-bottom: 1.5rem;">Tournaments</h2>
-                
-                <div class="card" style="width: 100%; filter: grayscale(100%); opacity: 0.6;">
-                    <h3>Beyond the Game 3v3 Basketball Tournament</h3>
-                    <p><strong>Age Group:</strong> Coming Soon</p>
-                    <p><strong>Entry Fee:</strong> Coming Soon</p>
-                    <p><strong>Details:</strong> Details are being finalized for our next high-energy 3v3 tournament. This event will promote teamwork, healthy competition, and athleticism. Check back soon for finalized dates, age groups, and prize information!</p>
-                    <br>
-                    <a href="#" class="btn" style="cursor: not-allowed; background-color: #6c757d;">Registrations Coming Soon</a>
+    <span id="top"></span>
+    <main>
+        <section class="page-hero">
+            <div class="wrap">
+                <p class="eyebrow" data-reveal>Giveaways · Tournaments</p>
+                <h1 class="lines"><span class="line"><span>Upcoming</span></span><span class="line"><span class="accent">Events</span></span></h1>
+                <p class="lead" data-reveal style="--d:3">Sign up today, compete for awesome prizes, and enter our latest giveaways!</p>
+                <div class="hero-meta" data-reveal style="--d:4">
+                    <span class="chip"><span class="dot"></span>Fall giveaway open</span>
+                    <span class="chip">3v3 tournament coming soon</span>
                 </div>
             </div>
+            <div class="ghost-word" aria-hidden="true">Compete</div>
+        </section>
 
+        <section class="wrap events-grid">
+
+            <!-- ==========================================
+                 CURRENT GIVEAWAY: FALL
+            =========================================== -->
+            <article class="event-card live" data-reveal>
+                <div class="event-top">
+                    <span class="status live"><span class="dot"></span>Open now</span>
+                    <span class="event-type">Giveaway</span>
+                </div>
+                <h2>Fall Athlete's Choice Giveaway</h2>
+                <div class="prize">
+                    <span class="prize-amt">$200</span>
+                    <span>worth of athlete's essentials!</span>
+                </div>
+                <dl class="event-facts">
+                    <div><dt>Includes</dt><dd>Nike Elite Pro Basketball Bag, Overtime branded merchandise, arm sleeves, resistance bands, and more!</dd></div>
+                    <div><dt>Entry fee</dt><dd>Free</dd></div>
+                    <div><dt>Details</dt><dd>Need new sports gear, but don't have the funds? Enter our <b>online raffle</b> for a chance to win the essentials you need to level up!</dd></div>
+                </dl>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScaV_JCNdbb_arh9--4orVM6kud6AFqlA3juLsiMIhg-TIJeQ/viewform?usp=dialog" target="_blank" rel="noopener" class="btn light">Enter online giveaway <span class="arrow">↗</span></a>
+            </article>
+
+            <!-- ==========================================
+                 TOURNAMENT (coming soon)
+            =========================================== -->
+            <article class="event-card soon" data-reveal style="--d:2">
+                <div class="event-top">
+                    <span class="status">Coming soon</span>
+                    <span class="event-type">Tournament</span>
+                </div>
+                <h2>Beyond the Game 3v3 Basketball Tournament</h2>
+                <dl class="event-facts">
+                    <div><dt>Age group</dt><dd>Coming soon</dd></div>
+                    <div><dt>Entry fee</dt><dd>Coming soon</dd></div>
+                    <div><dt>Details</dt><dd>We're currently setting up for our next 3v3 tournament. Check back soon for finalized dates, age groups, and prize information!</dd></div>
+                </dl>
+                <span class="btn disabled" aria-disabled="true">Registrations coming soon</span>
+            </article>
+        </section>
+
+        <!-- ==========================================
+             PAST GIVEAWAY: SUMMER (ended)
+        =========================================== -->
+        <section class="section past">
+            <div class="wrap">
+                <p class="eyebrow" data-reveal>Past events</p>
+                <h2 class="lines"><span class="line"><span>Summer Athlete's</span></span><span class="line"><span>Choice <span class="accent">Giveaway</span></span></span></h2>
+
+                <div class="past-meta" data-reveal style="--d:2">
+                    <span class="status ended">Ended · Winner chosen</span>
+                    <div class="past-prize">
+                        <small>Prize</small>
+                        <strong>Nike Elite Pro Basketball Bag</strong>
+                    </div>
+                </div>
+
+                <div class="past-posts">
+                    <div data-reveal>
+                        <p class="label-sm">Giveaway post</p>
+                        <!-- GIVEAWAY POST: paste the Instagram embed code for the summer giveaway post here
+                             (replace the placeholder box below).
+                             On Instagram: open the post > ... > Embed > Copy embed code.
+                             You can delete the <script> tag at the end of the copied code. -->
+                        <div class="embed-placeholder">Giveaway post coming soon</div>
+                        <!-- END GIVEAWAY POST -->
+                    </div>
+                    <div data-reveal style="--d:2">
+                        <p class="label-sm">Winner announcement</p>
+                        <!-- WINNER POST: paste the Instagram embed code for the winner announcement here
+                             (replace the placeholder box below). -->
+                        <div class="embed-placeholder">Winner post coming soon</div>
+                        <!-- END WINNER POST -->
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Beyond the Game Wellness. All rights reserved.</p>
+    <footer class="site-footer">
+        <div class="wrap">
+            <div class="footer-top">
+                <div>
+                    <h4>Beyond the Game Wellness</h4>
+                    <p>Teaching young athletes across NYC how to prevent, recognize, and recover from sports injuries.</p>
+                </div>
+                <div>
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="injurylibrary.html">Injury Library</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="collaborations.html">Collaborations</a></li>
+                        <li><a href="about.html">Our Mission</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="https://www.instagram.com/beyondthegamewellness" target="_blank" rel="noopener">Instagram ↗</a></li>
+                        <li><a href="mailto:beyondthegameoutreach@gmail.com">beyondthegameoutreach@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-word" aria-hidden="true"><span>B</span><span>e</span><span>y</span><span>o</span><span>n</span><span>d</span><span>&nbsp;</span><span>t</span><span>h</span><span>e</span><span>&nbsp;</span><span>G</span><span>a</span><span>m</span><span>e</span></div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Beyond the Game Wellness. All rights reserved.</p>
+                <a href="#top" class="to-top">Back to top ↑</a>
+            </div>
+        </div>
     </footer>
 
+    <script src="site.js"></script>
+
+    <!-- Instagram script at the very bottom so it works for ALL embedded posts on the page -->
+    <script async src="https://www.instagram.com/embed.js"></script>
 </body>
 </html>

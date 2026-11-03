@@ -3,205 +3,307 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Collaborations | Beyond the Game</title>
+    <title>Collaborations | Beyond the Game Wellness</title>
+    <meta name="theme-color" content="#4A6C38">
+    <link rel="icon" href="beyondthegame.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
 
-    <header class="sticky-header">
-        <div class="logo">
-            <a href="index.html">
-                <img src="beyondthegame.png" alt="Beyond the Game Logo Small">
-            </a>
+    <!-- Page transition curtain -->
+    <div class="curtain is-entering" aria-hidden="true">
+        <div class="curtain-inner">
+            <svg viewBox="0 0 400 80"><path d="M0 40 H140 L156 40 L168 14 L184 68 L198 28 L208 40 H400"/></svg>
+            <span class="curtain-label">Beyond the Game</span>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="injurylibrary.html">Injury Library</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="collaborations.html" class="active">Collaborations</a></li>
-                <li><a href="about.html">Our Mission</a></li>
-            </ul>
-        </nav>
+    </div>
+
+    <header class="site-header">
+        <div class="nav-pill">
+            <a href="index.html" class="brand" aria-label="Beyond the Game Wellness home">
+                <img src="beyondthegame.png" alt="Beyond the Game Wellness logo">
+            </a>
+            <nav class="nav" aria-label="Main">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="injurylibrary.html">Injury Library</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="collaborations.html" class="active" aria-current="page">Collaborations</a></li>
+                    <li><a href="about.html">Our Mission</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu">
+                <span></span><span></span><span class="sr-only">Menu</span>
+            </button>
+        </div>
     </header>
 
-    <main style="padding: 4rem 1rem; max-width: 1200px; margin: 0 auto;">
-        
-        <!-- Main Page Header -->
-        <div style="text-align: center; margin-bottom: 5rem;">
-            <h1 style="font-size: 3.2rem; margin-bottom: 1rem;">Our Collaborations</h1>
-            <p style="font-size: 1.2rem; color: #555;">Partnering with community organizations to bring wellness beyond the game.</p>
-        </div>
+    <div class="mobile-menu" id="mobile-menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="injurylibrary.html">Injury Library</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="collaborations.html">Collaborations</a></li>
+            <li><a href="about.html">Our Mission</a></li>
+        </ul>
+        <p class="mm-foot">@beyondthegamewellness · beyondthegameoutreach@gmail.com</p>
+    </div>
+
+    <span id="top"></span>
+    <main>
+        <section class="page-hero">
+            <div class="wrap">
+                <p class="eyebrow" data-reveal>Community partners</p>
+                <h1 class="lines"><span class="line"><span>Our</span></span><span class="line"><span class="accent">Collabs</span></span></h1>
+                <p class="lead" data-reveal style="--d:3">Partnering with community organizations to bring wellness beyond the game.</p>
+                <div class="hero-meta" data-reveal style="--d:4">
+                    <span class="chip"><span class="dot"></span>5 partners</span>
+                    <span class="chip">New York City</span>
+                </div>
+            </div>
+            <div class="ghost-word" aria-hidden="true">Together</div>
+        </section>
 
         <!-- ==========================================
-             COLLABORATION 1: YBL x BTG
+             COLLABORATION 01: YOUTH BASKETBALL LEAGUE (YBL) x BTG
         =========================================== -->
-        <section style="margin-bottom: 6rem; padding-bottom: 4rem; border-bottom: 2px solid #eee;">
-            
-            <div style="text-align: center; margin-bottom: 3rem;">
-                <h2 style="font-size: 2.5rem; margin-bottom: 0.5rem;">Beyond The Game x Youth Basketball League (YBL)</h2>
-                <p style="color: #777; font-size: 1.1rem;">Recapping our amazing partnership event with YBL!</p>
-            </div>
-
-            <!-- Content Grid for Collab 1: Splits the screen between Instagram and Gallery on larger screens -->
-            <div style="display: flex; flex-wrap: wrap; gap: 3rem; justify-content: center; align-items: flex-start;">
-                
-                <!-- Left Side: Featured Post -->
-                <div style="flex: 1; min-width: 320px; max-width: 500px;">
-                    <h3 style="text-align: center; margin-bottom: 1rem; font-size: 1.5rem;">Featured Post</h3>
-                    
+        <section class="collab" id="ybl">
+            <div class="wrap">
+                <div class="collab-head">
+                    <div class="collab-num" data-reveal="left">01</div>
+                    <div>
+                        <span class="x" data-reveal>Beyond The Game ×</span>
+                        <h2 class="lines"><span class="line"><span>Youth Basketball League (YBL)</span></span></h2>
+                        <p data-reveal style="--d:2">Recapping our amazing partnership event with YBL!</p>
+                    </div>
+                </div>
+                <div class="collab-body">
+                    <div class="collab-post" data-reveal>
+                        <p class="label-sm">Featured post</p>
                     <!-- INSTAGRAM EMBED CODE -->
                     <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/Dbb4MYqiYr7/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px auto; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
-                        <div style="padding:16px;"> 
-                            <a href="https://www.instagram.com/p/Dbb4MYqiYr7/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> 
-                                <div style=" display: flex; flex-direction: row; align-items: center;"> 
-                                    <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> 
-                                    <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> 
-                                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> 
-                                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div>
-                                    </div>
-                                </div>
-                                <div style="padding: 19% 0;"></div> 
-                                <div style="display:block; height:50px; margin:0 auto 12px; width:50px;">
-                                    <svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg>
-                                </div>
-                                <div style="padding-top: 8px;"> 
-                                    <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div>
-                                </div>
-                                <div style="padding: 12.5% 0;"></div> 
-                                <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
-                                    <div> 
-                                        <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> 
-                                        <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> 
-                                        <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div>
-                                    </div>
-                                    <div style="margin-left: 8px;"> 
-                                        <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> 
-                                        <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div>
-                                    </div>
-                                    <div style="margin-left: auto;"> 
-                                        <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> 
-                                        <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> 
-                                        <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div>
-                                    </div>
-                                </div> 
-                                <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> 
-                                    <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> 
-                                    <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div>
-                                </div>
-                            </a>
-                            <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
-                                <a href="https://www.instagram.com/p/Dbb4MYqiYr7/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Beyond The Game Wellness NYC (@beyondthegamewellness)</a>
-                            </p>
-                        </div>
-                    </blockquote>
+<div style="padding:16px;">
+<a href="https://www.instagram.com/p/Dbb4MYqiYr7/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+<div style=" display: flex; flex-direction: row; align-items: center;">
+<div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div>
+<div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+<div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div>
+<div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div>
+</div>
+</div>
+<div style="padding: 19% 0;"></div>
+<div style="display:block; height:50px; margin:0 auto 12px; width:50px;">
+<svg height="50px" version="1.1" viewbox="0 0 60 60" width="50px" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1"><g fill="#000000" transform="translate(-511.000000, -20.000000)"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg>
+</div>
+<div style="padding-top: 8px;">
+<div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div>
+</div>
+<div style="padding: 12.5% 0;"></div>
+<div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+<div>
+<div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div>
+<div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div>
+<div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div>
+</div>
+<div style="margin-left: 8px;">
+<div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div>
+<div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div>
+</div>
+<div style="margin-left: auto;">
+<div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div>
+<div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div>
+<div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
+<div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div>
+<div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div>
+</div>
+</a>
+<p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+<a href="https://www.instagram.com/p/Dbb4MYqiYr7/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Beyond The Game Wellness NYC (@beyondthegamewellness)</a>
+</p>
+</div>
+</blockquote>
                     <!-- END OF INSTAGRAM EMBED CODE -->
-                </div>
-
-                <!-- Right Side: Mini Gallery -->
-                <div style="flex: 1; min-width: 320px;">
-                    <h3 style="text-align: center; margin-bottom: 1rem; font-size: 1.5rem;">Gallery</h3>
-                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;">
-                        <!-- Row 1 -->
-                        <div style="border-radius: 8px; overflow: hidden; aspect-ratio: 4/3; background-color: #eee;">
-                            <img src="YBLXBTG/gavinteaching-yblxbtg.png" alt="YBL x BTG Photo 1" style="width: 100%; height: 100%; object-fit: cover;">
-                        </div>
-                        <div style="border-radius: 8px; overflow: hidden; aspect-ratio: 4/3; background-color: #eee;">
-                            <img src="YBLXBTG/brandonteaching-yblxbtg.png" alt="YBL x BTG Photo 2" style="width: 100%; height: 100%; object-fit: cover;">
-                        </div>
-                        <!-- Row 2 -->
-                        <div style="border-radius: 8px; overflow: hidden; aspect-ratio: 4/3; background-color: #eee;">
-                            <img src="YBLXBTG/jiateaching-yblxbtg.png" alt="YBL x BTG Photo 3" style="width: 100%; height: 100%; object-fit: cover;">
-                        </div>
-                        <div style="border-radius: 8px; overflow: hidden; aspect-ratio: 4/3; background-color: #eee;">
-                            <img src="YBLXBTG/gavinandjiateaching-yblxbtg.png" alt="YBL x BTG Photo 4" style="width: 100%; height: 100%; object-fit: cover;">
-                        </div>
-                        <!-- Row 3 -->
-                        <div style="border-radius: 8px; overflow: hidden; aspect-ratio: 4/3; background-color: #eee;">
-                            <img src="YBLXBTG/brandonandjiaandgavinteaching-yblxbtg.png" alt="YBL x BTG Photo 5" style="width: 100%; height: 100%; object-fit: cover;">
-                        </div>
-                        <div style="border-radius: 8px; overflow: hidden; aspect-ratio: 4/3; background-color: #eee;">
-                            <img src="YBLXBTG/jaydenteaching-yblxbtg.png" alt="YBL x BTG Photo 6" style="width: 100%; height: 100%; object-fit: cover;">
-                        </div>
+                    </div>
+                    <div>
+                        <p class="label-sm">Gallery · tap to enlarge</p>
+                        <!-- Photos live in the YBLXBTG folder -->
+                    <div class="gallery">
+                        <button class="shot" type="button" aria-label="View YBL photo 1"><img src="YBLXBTG/gavinteaching-yblxbtg.png" alt="YBL x BTG Photo 1" loading="lazy"></button>
+                        <button class="shot" type="button" aria-label="View YBL photo 2"><img src="YBLXBTG/brandonteaching-yblxbtg.png" alt="YBL x BTG Photo 2" loading="lazy"></button>
+                        <button class="shot" type="button" aria-label="View YBL photo 3"><img src="YBLXBTG/jiateaching-yblxbtg.png" alt="YBL x BTG Photo 3" loading="lazy"></button>
+                        <button class="shot" type="button" aria-label="View YBL photo 4"><img src="YBLXBTG/gavinandjiateaching-yblxbtg.png" alt="YBL x BTG Photo 4" loading="lazy"></button>
+                        <button class="shot" type="button" aria-label="View YBL photo 5"><img src="YBLXBTG/brandonandjiaandgavinteaching-yblxbtg.png" alt="YBL x BTG Photo 5" loading="lazy"></button>
+                        <button class="shot" type="button" aria-label="View YBL photo 6"><img src="YBLXBTG/jaydenteaching-yblxbtg.png" alt="YBL x BTG Photo 6" loading="lazy"></button>
+                    </div>
                     </div>
                 </div>
-
             </div>
         </section>
-
         <!-- ==========================================
-             COLLABORATION 2: TINY BALLERS REGO x BTG
+             COLLABORATION 02: TINY BALLERS REGO x BTG
         =========================================== -->
-        <section style="margin-bottom: 6rem; padding-bottom: 4rem; border-bottom: 2px solid #eee;">
-            
-            <div style="text-align: center; margin-bottom: 3rem;">
-                <h2 style="font-size: 2.5rem; margin-bottom: 0.5rem;">Beyond The Game x Tiny Ballers Rego</h2>
-                <p style="color: #777; font-size: 1.1rem;">Recapping our amazing partnership event with Tiny Ballers Rego!</p>
-            </div>
-
-            <!-- Content Grid for Collab 2 -->
-            <div style="display: flex; flex-wrap: wrap; gap: 3rem; justify-content: center; align-items: flex-start;">
-                
-                <!-- Left Side: Featured Post -->
-                <div style="flex: 1; min-width: 320px; max-width: 500px;">
-                    <h3 style="text-align: center; margin-bottom: 1rem; font-size: 1.5rem;">Featured Post</h3>
-                    
+        <section class="collab" id="tiny-ballers">
+            <div class="wrap">
+                <div class="collab-head">
+                    <div class="collab-num" data-reveal="left">02</div>
+                    <div>
+                        <span class="x" data-reveal>Beyond The Game ×</span>
+                        <h2 class="lines"><span class="line"><span>Tiny Ballers Rego</span></span></h2>
+                        <p data-reveal style="--d:2">Recapping our amazing partnership event with Tiny Ballers Rego!</p>
+                    </div>
+                </div>
+                <div class="collab-body">
+                    <div class="collab-post" data-reveal>
+                        <p class="label-sm">Featured post</p>
                     <!-- INSTAGRAM EMBED CODE -->
-                    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DcNNE64lnmo/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px auto; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/DcNNE64lnmo/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/DcNNE64lnmo/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Beyond The Game Wellness NYC (@beyondthegamewellness)</a></p></div></blockquote>
+                    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DcNNE64lnmo/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px auto; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/DcNNE64lnmo/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg height="50px" version="1.1" viewbox="0 0 60 60" width="50px" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1"><g fill="#000000" transform="translate(-511.000000, -20.000000)"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/DcNNE64lnmo/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Beyond The Game Wellness NYC (@beyondthegamewellness)</a></p></div></blockquote>
                     <!-- END OF INSTAGRAM EMBED CODE -->
-                </div>
-
-                <!-- Right Side: Mini Gallery -->
-                <div style="flex: 1; min-width: 320px;">
-                    <h3 style="text-align: center; margin-bottom: 1rem; font-size: 1.5rem;">Gallery</h3>
-                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;">
-                        <!-- Row 1 -->
-                        <div style="border-radius: 8px; overflow: hidden; aspect-ratio: 4/3; background-color: #eee;">
-                            <img src="TINYBALLERSXBTG/1tbrxbtg.png" alt="Tiny Ballers x BTG Photo 1" style="width: 100%; height: 100%; object-fit: cover;">
-                        </div>
-                        <div style="border-radius: 8px; overflow: hidden; aspect-ratio: 4/3; background-color: #eee;">
-                            <img src="TINYBALLERSXBTG/2tbrxbtg.png" alt="Tiny Ballers x BTG Photo 2" style="width: 100%; height: 100%; object-fit: cover;">
-                        </div>
-
-                        <!-- Row 2 -->
-                        <div style="border-radius: 8px; overflow: hidden; aspect-ratio: 4/3; background-color: #eee;">
-                            <img src="TINYBALLERSXBTG/5tbrxbtg.png" alt="Tiny Ballers x BTG Photo 3" style="width: 100%; height: 100%; object-fit: cover;">
-                        </div>
-                        <div style="border-radius: 8px; overflow: hidden; aspect-ratio: 4/3; background-color: #eee;">
-                            <img src="TINYBALLERSXBTG/6tbrxbtg.png" alt="Tiny Ballers x BTG Photo 4" style="width: 100%; height: 100%; object-fit: cover;">
-                        </div>
-
-                        <!-- Row 3 -->
-                        <div style="border-radius: 8px; overflow: hidden; aspect-ratio: 4/3; background-color: #eee;">
-                            <img src="TINYBALLERSXBTG/3tbrxbtg.png" alt="Tiny Ballers x BTG Photo 5" style="width: 100%; height: 100%; object-fit: cover;">
-                        </div>
-                        <div style="border-radius: 8px; overflow: hidden; aspect-ratio: 4/3; background-color: #eee;">
-                            <img src="TINYBALLERSXBTG/7tbrxbtg.png" alt="Tiny Ballers x BTG Photo 6" style="width: 100%; height: 100%; object-fit: cover;">
-                        </div>
+                    </div>
+                    <div>
+                        <p class="label-sm">Gallery · tap to enlarge</p>
+                        <!-- Photos live in the TINYBALLERSXBTG folder -->
+                    <div class="gallery">
+                        <button class="shot" type="button" aria-label="View Tiny Ballers photo 1"><img src="TINYBALLERSXBTG/1tbrxbtg.png" alt="Tiny Ballers x BTG Photo 1" loading="lazy"></button>
+                        <button class="shot" type="button" aria-label="View Tiny Ballers photo 2"><img src="TINYBALLERSXBTG/2tbrxbtg.png" alt="Tiny Ballers x BTG Photo 2" loading="lazy"></button>
+                        <button class="shot" type="button" aria-label="View Tiny Ballers photo 3"><img src="TINYBALLERSXBTG/5tbrxbtg.png" alt="Tiny Ballers x BTG Photo 3" loading="lazy"></button>
+                        <button class="shot" type="button" aria-label="View Tiny Ballers photo 4"><img src="TINYBALLERSXBTG/6tbrxbtg.png" alt="Tiny Ballers x BTG Photo 4" loading="lazy"></button>
+                        <button class="shot" type="button" aria-label="View Tiny Ballers photo 5"><img src="TINYBALLERSXBTG/3tbrxbtg.png" alt="Tiny Ballers x BTG Photo 5" loading="lazy"></button>
+                        <button class="shot" type="button" aria-label="View Tiny Ballers photo 6"><img src="TINYBALLERSXBTG/7tbrxbtg.jpeg" alt="Tiny Ballers x BTG Photo 6" loading="lazy"></button>
+                    </div>
                     </div>
                 </div>
-
+            </div>
+        </section>
+        <!-- ==========================================
+             COLLABORATION 03: PROJECT COPYBARA x BTG
+        =========================================== -->
+        <section class="collab" id="project-copybara">
+            <div class="wrap">
+                <div class="collab-head">
+                    <div class="collab-num" data-reveal="left">03</div>
+                    <div>
+                        <span class="x" data-reveal>Beyond The Game ×</span>
+                        <h2 class="lines"><span class="line"><span>Project Copybara</span></span></h2>
+                        <p data-reveal style="--d:2">Recapping our amazing partnership event with Project Copybara!</p>
+                    </div>
+                </div>
+                <div class="collab-body">
+                    <div class="collab-post" data-reveal>
+                        <p class="label-sm">Featured post</p>
+                        
+                    <!-- INSTAGRAM EMBED CODE -->
+                    <!-- Paste the Project Copybara Instagram embed code here (replace the placeholder box below).
+                         On Instagram: open the post > ... > Embed > Copy embed code.
+                         You can delete the <script> tag at the end of the copied code, since the page already loads it at the bottom. -->
+                            <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DeLAgeCiSmY/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/DeLAgeCiSmY/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/DeLAgeCiSmY/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Beyond The Game Wellness NYC (@beyondthegamewellness)</a></p></div></blockquote>
+<script async src="//www.instagram.com/embed.js"></script>
+                    <!-- END OF INSTAGRAM EMBED CODE -->
+                    </div>
+                    <div>
+                        <p class="label-sm">Gallery · tap to enlarge</p>
+                        <!-- Photos live in the PROJECTCOPYBARAXBTG folder -->
+                    <div class="gallery">
+                        <button class="shot" type="button" aria-label="View Project Copybara photo 1"><img src="PROJECTCOPYBARAXBTG/1pcxbtg.png" alt="Project Copybara x BTG Photo 1" loading="lazy"></button>
+                        <button class="shot" type="button" aria-label="View Project Copybara photo 2"><img src="PROJECTCOPYBARAXBTG/2pcxbtg.png" alt="Project Copybara x BTG Photo 2" loading="lazy"></button>
+                        <button class="shot" type="button" aria-label="View Project Copybara photo 3"><img src="PROJECTCOPYBARAXBTG/3pcxbtg.png" alt="Project Copybara x BTG Photo 3" loading="lazy"></button>
+                        <button class="shot" type="button" aria-label="View Project Copybara photo 4"><img src="PROJECTCOPYBARAXBTG/4pcxbtg.png" alt="Project Copybara x BTG Photo 4" loading="lazy"></button>
+                        <button class="shot" type="button" aria-label="View Project Copybara photo 5"><img src="PROJECTCOPYBARAXBTG/5pcxbtg.png" alt="Project Copybara x BTG Photo 5" loading="lazy"></button>
+                        <button class="shot" type="button" aria-label="View Project Copybara photo 6"><img src="PROJECTCOPYBARAXBTG/6pcxbtg.png" alt="Project Copybara x BTG Photo 6" loading="lazy"></button>
+                    </div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- ==========================================
-             COLLABORATION 3: PLACEHOLDER
+             COLLABORATIONS 04 + 05 (logo only)
+             Logos live in the LOGOS folder.
         =========================================== -->
-        <section style="margin-bottom: 4rem;">
-            <div style="text-align: center; margin-bottom: 3rem;">
-                <h2 style="font-size: 2.5rem; margin-bottom: 0.5rem;">More Collaborations Coming Soon!</h2>
-                <p style="color: #777; font-size: 1.1rem;">Stay tuned for our next community partnership.</p>
+        <section class="collab">
+            <div class="wrap">
+                <div class="logo-head">
+                    <div>
+                        <p class="eyebrow" data-reveal>Also teamed up with</p>
+                        <h2 class="lines"><span class="line"><span>More community</span></span><span class="line"><span class="accent">partners</span></span></h2>
+                    </div>
+                </div>
+                <div class="logo-collabs">
+                    <article class="logo-tile" id="slt-hoops" data-reveal>
+                        <div class="logo-box"><img src="LOGOS/slthoops-logo.png" alt="SLT Hoops logo"></div>
+                        <div class="logo-meta">
+                            <span class="num">04</span>
+                            <div><span class="x">Beyond The Game ×</span><h3>SLT Hoops</h3></div>
+                            <img class="btg-mini" src="beyondthegame.png" alt="" aria-hidden="true">
+                        </div>
+                    </article>
+                    <article class="logo-tile" id="st-roberts" data-reveal style="--d:2">
+                        <div class="logo-box"><img src="LOGOS/stroberts-logo.png" alt="St. Robert Bellarmine Roman Catholic Church logo"></div>
+                        <div class="logo-meta">
+                            <span class="num">05</span>
+                            <div><span class="x">Beyond The Game ×</span><h3>St. Roberts Basketball</h3></div>
+                            <img class="btg-mini" src="beyondthegame.png" alt="" aria-hidden="true">
+                        </div>
+                    </article>
+                </div>
             </div>
         </section>
 
+        <section class="section" style="padding-bottom:0">
+            <div class="wrap">
+                <div class="cta-band" data-reveal="scale">
+                    <svg class="pulse-line " viewBox="0 0 1200 80" preserveAspectRatio="none" aria-hidden="true"><path class="trace" d="M0 50 H380 L400 50 L412 32 L426 50 L446 50 L460 6 L478 78 L494 36 L506 50 H760 L772 50 L782 40 L794 50 H1200"/></svg>
+                    <p class="eyebrow on-dark">More collaborations coming soon</p>
+                    <h2>Want to partner with us?</h2>
+                    <p style="max-width:46ch;color:rgba(255,255,255,.85);margin:0">Stay tuned for our next community partnership, or reach out to bring Beyond the Game to your league.</p>
+                    <a href="mailto:beyondthegameoutreach@gmail.com" class="btn light">Get in touch <span class="arrow">→</span></a>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Beyond the Game Wellness. All rights reserved.</p>
+    <footer class="site-footer">
+        <div class="wrap">
+            <div class="footer-top">
+                <div>
+                    <h4>Beyond the Game Wellness</h4>
+                    <p>Teaching young athletes across NYC how to prevent, recognize, and recover from sports injuries.</p>
+                </div>
+                <div>
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="injurylibrary.html">Injury Library</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="collaborations.html">Collaborations</a></li>
+                        <li><a href="about.html">Our Mission</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="https://www.instagram.com/beyondthegamewellness" target="_blank" rel="noopener">Instagram ↗</a></li>
+                        <li><a href="mailto:beyondthegameoutreach@gmail.com">beyondthegameoutreach@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-word" aria-hidden="true"><span>B</span><span>e</span><span>y</span><span>o</span><span>n</span><span>d</span><span>&nbsp;</span><span>t</span><span>h</span><span>e</span><span>&nbsp;</span><span>G</span><span>a</span><span>m</span><span>e</span></div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Beyond the Game Wellness. All rights reserved.</p>
+                <a href="#top" class="to-top">Back to top ↑</a>
+            </div>
+        </div>
     </footer>
 
-    <!-- Put the Instagram Script at the very bottom so it works for ALL embedded posts on the page -->
-    <script async src="https://www.instagram.com/embed.js"></script>
+    <script src="site.js"></script>
 
+    <!-- Instagram script at the very bottom so it works for ALL embedded posts on the page -->
+    <script async src="https://www.instagram.com/embed.js"></script>
 </body>
 </html>

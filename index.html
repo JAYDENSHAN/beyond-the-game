@@ -1,145 +1,269 @@
+Claude
+/
+Jayden’s MacBook Air (2), Connected
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Index · HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beyond the Game Wellness | Injury Education</title>
+    <meta name="theme-color" content="#4A6C38">
+    <link rel="icon" href="beyondthegame.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* Remove default browser margins to ensure it perfectly fills the screen */
-        html, body {
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden; 
-        }
-
-        /* Set the section to be exactly the size of the window and use the image as a background */
-        .splash {
-            position: relative;
-            width: 100vw;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            
-            /* This guarantees it fills the whole screen beautifully */
-            background-image: url('YBLXBTG.png');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Adds a subtle dark tint to the image so your white text pops */
-        .splash::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(0, 0, 0, 0.4); /* Adjust the 0.4 up or down to make the tint darker/lighter */
-            z-index: 1;
-        }
-
-        /* Styling and animation for the layered text */
-        .splash-text {
-            position: relative;
-            z-index: 2; /* Sits on top of the image and the dark tint */
-            color: #ffffff;
-            font-size: 4.5rem;
-            font-weight: bold;
-            text-align: center;
-            text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.6);
-            opacity: 0;
-            animation: fadeInText 2s ease-in-out forwards;
-            padding: 0 1rem;
-        }
-
-        /* The fade-in animation keyframes */
-        @keyframes fadeInText {
-            0% {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-    </style>
+    <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
-
-    <!-- Splash section with background image and fading text -->
-    <section class="splash">
-        <h1 class="splash-text">Beyond The Game Wellness</h1>
-    </section>
-
-    <header class="sticky-header">
-        <div class="logo">
-            <a href="index.html">
-                <img src="beyondthegame.png" alt="Beyond the Game Logo Small">
-            </a>
+ 
+    <!-- Page transition curtain -->
+    <div class="curtain is-entering" aria-hidden="true">
+        <div class="curtain-inner">
+            <svg viewBox="0 0 400 80"><path d="M0 40 H140 L156 40 L168 14 L184 68 L198 28 L208 40 H400"/></svg>
+            <span class="curtain-label">Beyond the Game</span>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="injurylibrary.html">Injury Library</a></li>
-                <li><a href="events.html">Events</a></li>
-
-                <li><a href="collaborations.html">Collaborations</a></li>
-                <li><a href="about.html">Our Mission</a></li>
-            </ul>
-        </nav>
+    </div>
+ 
+    <header class="site-header">
+        <div class="nav-pill">
+            <a href="index.html" class="brand" aria-label="Beyond the Game Wellness home">
+                <img src="beyondthegame.png" alt="Beyond the Game Wellness logo">
+            </a>
+            <nav class="nav" aria-label="Main">
+                <ul>
+                    <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+                    <li><a href="injurylibrary.html">Injury Library</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="collaborations.html">Collaborations</a></li>
+                    <li><a href="about.html">Our Mission</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu">
+                <span></span><span></span><span class="sr-only">Menu</span>
+            </button>
+        </div>
     </header>
-    
+ 
+    <div class="mobile-menu" id="mobile-menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="injurylibrary.html">Injury Library</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="collaborations.html">Collaborations</a></li>
+            <li><a href="about.html">Our Mission</a></li>
+        </ul>
+        <p class="mm-foot">@beyondthegamewellness · beyondthegameoutreach@gmail.com</p>
+    </div>
+ 
+    <span id="top"></span>
+    <section class="hero-home">
+        <div class="hero-bg"></div>
+        <div class="hero-grain"></div>
+        <svg class="hero-arc" viewBox="0 0 1000 300" aria-hidden="true"><path d="M60 290 Q500 -150 940 290"/></svg>
+ 
+        <div class="wrap hero-content">
+            <p class="eyebrow on-dark rise d1">NYC youth sports · Injury education</p>
+            <h1 class="hero-title lines">
+                <span class="line"><span>Beyond</span></span>
+                <span class="line"><span class="outline-text">The Game</span></span>
+                <span class="line"><span>Wellness</span></span>
+            </h1>
+            <div class="hero-row">
+                <p class="rise d2">We are dedicated to teaching young athletes the crucial skills and techniques needed to prevent injuries and ensure a long, healthy career in sports.</p>
+                <div class="hero-ctas rise d3">
+                    <a href="events.html" class="btn light">Upcoming events <span class="arrow">→</span></a>
+                    <a href="injurylibrary.html" class="btn ghost">Injury library <span class="arrow">→</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-pulse"><svg class="pulse-line is-in" viewBox="0 0 1200 80" preserveAspectRatio="none" aria-hidden="true"><path class="trace" d="M0 50 H380 L400 50 L412 32 L426 50 L446 50 L460 6 L478 78 L494 36 L506 50 H760 L772 50 L782 40 L794 50 H1200"/><path class="blip" d="M0 50 H380 L400 50 L412 32 L426 50 L446 50 L460 6 L478 78 L494 36 L506 50 H760 L772 50 L782 40 L794 50 H1200"/></svg></div>
+        <span class="scroll-cue">Scroll ↓</span>
+    </section>
+ 
+    <div class="marquee " aria-hidden="true">
+        <div class="marquee-track"><span>Prevent <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 8 3.4 4.5 6.9 4.5c2 0 3.6 1.1 5.1 3 1.5-1.9 3.1-3 5.1-3 3.5 0 5.5 3.5 4.2 6.8-1.8 4.6-9.3 9.2-9.3 9.2z"/><path d="M5.5 12h3l1.5-2.5 2 5 1.5-2.5h5"/></svg></span><span>Recognize <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 8 3.4 4.5 6.9 4.5c2 0 3.6 1.1 5.1 3 1.5-1.9 3.1-3 5.1-3 3.5 0 5.5 3.5 4.2 6.8-1.8 4.6-9.3 9.2-9.3 9.2z"/><path d="M5.5 12h3l1.5-2.5 2 5 1.5-2.5h5"/></svg></span><span>Recover <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 8 3.4 4.5 6.9 4.5c2 0 3.6 1.1 5.1 3 1.5-1.9 3.1-3 5.1-3 3.5 0 5.5 3.5 4.2 6.8-1.8 4.6-9.3 9.2-9.3 9.2z"/><path d="M5.5 12h3l1.5-2.5 2 5 1.5-2.5h5"/></svg></span><span>Educate <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 8 3.4 4.5 6.9 4.5c2 0 3.6 1.1 5.1 3 1.5-1.9 3.1-3 5.1-3 3.5 0 5.5 3.5 4.2 6.8-1.8 4.6-9.3 9.2-9.3 9.2z"/><path d="M5.5 12h3l1.5-2.5 2 5 1.5-2.5h5"/></svg></span><span>Play longer <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 8 3.4 4.5 6.9 4.5c2 0 3.6 1.1 5.1 3 1.5-1.9 3.1-3 5.1-3 3.5 0 5.5 3.5 4.2 6.8-1.8 4.6-9.3 9.2-9.3 9.2z"/><path d="M5.5 12h3l1.5-2.5 2 5 1.5-2.5h5"/></svg></span><span>Prevent <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 8 3.4 4.5 6.9 4.5c2 0 3.6 1.1 5.1 3 1.5-1.9 3.1-3 5.1-3 3.5 0 5.5 3.5 4.2 6.8-1.8 4.6-9.3 9.2-9.3 9.2z"/><path d="M5.5 12h3l1.5-2.5 2 5 1.5-2.5h5"/></svg></span><span>Recognize <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 8 3.4 4.5 6.9 4.5c2 0 3.6 1.1 5.1 3 1.5-1.9 3.1-3 5.1-3 3.5 0 5.5 3.5 4.2 6.8-1.8 4.6-9.3 9.2-9.3 9.2z"/><path d="M5.5 12h3l1.5-2.5 2 5 1.5-2.5h5"/></svg></span><span>Recover <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 8 3.4 4.5 6.9 4.5c2 0 3.6 1.1 5.1 3 1.5-1.9 3.1-3 5.1-3 3.5 0 5.5 3.5 4.2 6.8-1.8 4.6-9.3 9.2-9.3 9.2z"/><path d="M5.5 12h3l1.5-2.5 2 5 1.5-2.5h5"/></svg></span><span>Educate <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 8 3.4 4.5 6.9 4.5c2 0 3.6 1.1 5.1 3 1.5-1.9 3.1-3 5.1-3 3.5 0 5.5 3.5 4.2 6.8-1.8 4.6-9.3 9.2-9.3 9.2z"/><path d="M5.5 12h3l1.5-2.5 2 5 1.5-2.5h5"/></svg></span><span>Play longer <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 8 3.4 4.5 6.9 4.5c2 0 3.6 1.1 5.1 3 1.5-1.9 3.1-3 5.1-3 3.5 0 5.5 3.5 4.2 6.8-1.8 4.6-9.3 9.2-9.3 9.2z"/><path d="M5.5 12h3l1.5-2.5 2 5 1.5-2.5h5"/></svg></span><span>Prevent <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 8 3.4 4.5 6.9 4.5c2 0 3.6 1.1 5.1 3 1.5-1.9 3.1-3 5.1-3 3.5 0 5.5 3.5 4.2 6.8-1.8 4.6-9.3 9.2-9.3 9.2z"/><path d="M5.5 12h3l1.5-2.5 2 5 1.5-2.5h5"/></svg></span><span>Recognize <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 8 3.4 4.5 6.9 4.5c2 0 3.6 1.1 5.1 3 1.5-1.9 3.1-3 5.1-3 3.5 0 5.5 3.5 4.2 6.8-1.8 4.6-9.3 9.2-9.3 9.2z"/><path d="M5.5 12h3l1.5-2.5 2 5 1.5-2.5h5"/></svg></span><span>Recover <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 8 3.4 4.5 6.9 4.5c2 0 3.6 1.1 5.1 3 1.5-1.9 3.1-3 5.1-3 3.5 0 5.5 3.5 4.2 6.8-1.8 4.6-9.3 9.2-9.3 9.2z"/><path d="M5.5 12h3l1.5-2.5 2 5 1.5-2.5h5"/></svg></span><span>Educate <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 8 3.4 4.5 6.9 4.5c2 0 3.6 1.1 5.1 3 1.5-1.9 3.1-3 5.1-3 3.5 0 5.5 3.5 4.2 6.8-1.8 4.6-9.3 9.2-9.3 9.2z"/><path d="M5.5 12h3l1.5-2.5 2 5 1.5-2.5h5"/></svg></span><span>Play longer <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 8 3.4 4.5 6.9 4.5c2 0 3.6 1.1 5.1 3 1.5-1.9 3.1-3 5.1-3 3.5 0 5.5 3.5 4.2 6.8-1.8 4.6-9.3 9.2-9.3 9.2z"/><path d="M5.5 12h3l1.5-2.5 2 5 1.5-2.5h5"/></svg></span><span>Prevent <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 8 3.4 4.5 6.9 4.5c2 0 3.6 1.1 5.1 3 1.5-1.9 3.1-3 5.1-3 3.5 0 5.5 3.5 4.2 6.8-1.8 4.6-9.3 9.2-9.3 9.2z"/><path d="M5.5 12h3l1.5-2.5 2 5 1.5-2.5h5"/></svg></span><span>Recognize <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 8 3.4 4.5 6.9 4.5c2 0 3.6 1.1 5.1 3 1.5-1.9 3.1-3 5.1-3 3.5 0 5.5 3.5 4.2 6.8-1.8 4.6-9.3 9.2-9.3 9.2z"/><path d="M5.5 12h3l1.5-2.5 2 5 1.5-2.5h5"/></svg></span><span>Recover <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 8 3.4 4.5 6.9 4.5c2 0 3.6 1.1 5.1 3 1.5-1.9 3.1-3 5.1-3 3.5 0 5.5 3.5 4.2 6.8-1.8 4.6-9.3 9.2-9.3 9.2z"/><path d="M5.5 12h3l1.5-2.5 2 5 1.5-2.5h5"/></svg></span><span>Educate <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 8 3.4 4.5 6.9 4.5c2 0 3.6 1.1 5.1 3 1.5-1.9 3.1-3 5.1-3 3.5 0 5.5 3.5 4.2 6.8-1.8 4.6-9.3 9.2-9.3 9.2z"/><path d="M5.5 12h3l1.5-2.5 2 5 1.5-2.5h5"/></svg></span><span>Play longer <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 8 3.4 4.5 6.9 4.5c2 0 3.6 1.1 5.1 3 1.5-1.9 3.1-3 5.1-3 3.5 0 5.5 3.5 4.2 6.8-1.8 4.6-9.3 9.2-9.3 9.2z"/><path d="M5.5 12h3l1.5-2.5 2 5 1.5-2.5h5"/></svg></span></div>
+    </div>
+ 
     <main>
-        <section class="hero" style="padding-top: 3rem; max-width: 1100px; margin: 0 auto;">
-            <h1 style="font-size: 3.2rem; margin-bottom: 1.5rem;">Championing Athlete Wellness Beyond the Game</h1>
-            
-            <p style="font-size: 1.4rem; margin-bottom: 3rem;">We are dedicated to teaching young athletes the crucial skills and techniques needed to prevent injuries and ensure a long, healthy career in sports.</p>
-            
-            <a href="events.html" class="btn" style="padding: 1.5rem 3.5rem; font-size: 1.6rem; border-radius: 60px;">Sign up for our exciting giveaways and tournaments!</a>
-            
-            <div style="margin-top: 4rem; padding: 2.5rem; background-color: var(--white); border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); font-size: 1.3rem; line-height: 1.8; text-align: center;">
-                <p style="margin-bottom: 1.5rem; font-size: 1.3rem; color: #333;">We come around to different youth sports teams all over NYC and educate on injury prevention and treatment!</p>
-                <p style="margin-bottom: 0; font-size: 1.3rem; color: #333;">Take a look at our 
-                    <a href="events.html" style="color: var(--primary-green); font-weight: bold; text-decoration: none; border-bottom: 2px solid var(--primary-green);">upcoming events</a> 
-                    to learn more about the exciting tournaments (with prizes!) that we host, or our extensive 
-                    <a href="injurylibrary.html" style="color: var(--primary-green); font-weight: bold; text-decoration: none; border-bottom: 2px solid var(--primary-green);">injury library</a> 
-                    to learn more about the 25 most common injuries in sports!
-                </p>
+        <section class="section">
+            <div class="wrap">
+                <div class="intro-grid">
+                    <div>
+                        <p class="eyebrow" data-reveal>Who we are</p>
+                        <h2 class="lines">
+                            <span class="line"><span>Championing</span></span>
+                            <span class="line"><span>athlete <span class="accent">wellness</span></span></span>
+                            <span class="line"><span>beyond the game</span></span>
+                        </h2>
+                    </div>
+                    <div class="intro-copy mission-copy" data-reveal style="--d:2">
+                        <p>We come around to different youth sports teams all over NYC and educate on injury prevention and treatment!</p>
+                        <p>Take a look at our <a class="text-link" href="events.html">upcoming events</a> to learn more about the exciting tournaments (with prizes!) that we host, or our extensive <a class="text-link" href="injurylibrary.html">injury library</a> to learn more about the 25 most common injuries in sports.</p>
+                    </div>
+                </div>
+ 
+                <div class="pillars">
+                    <article class="pillar" data-reveal style="--d:0">
+                        <span class="num">01 /</span>
+                        <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.2-4.2"/></svg></span>
+                        <div>
+                            <h3>Identify</h3>
+                            <p>Learn the signs of the most common sports injuries before they turn into something serious.</p>
+                        </div>
+                    </article>
+                    <article class="pillar" data-reveal style="--d:1">
+                        <span class="num">02 /</span>
+                        <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 8 3.4 4.5 6.9 4.5c2 0 3.6 1.1 5.1 3 1.5-1.9 3.1-3 5.1-3 3.5 0 5.5 3.5 4.2 6.8-1.8 4.6-9.3 9.2-9.3 9.2z"/><path d="M5.5 12h3l1.5-2.5 2 5 1.5-2.5h5"/></svg></span>
+                        <div>
+                            <h3>React</h3>
+                            <p>Know what to do in the moment, so athletes, parents, and coaches respond the right way.</p>
+                        </div>
+                    </article>
+                    <article class="pillar" data-reveal style="--d:2">
+                        <span class="num">03 /</span>
+                        <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 3l7.5 3v5.5c0 4.6-3.2 8.2-7.5 9.5-4.3-1.3-7.5-4.9-7.5-9.5V6z"/></svg></span>
+                        <div>
+                            <h3>Prevent</h3>
+                            <p>Build the habits that keep young athletes healthy and in the game for the long run.</p>
+                        </div>
+                    </article>
+                </div>
+ 
+                <div class="stats">
+                    <div class="stat" data-reveal style="--d:0">
+                        <div class="big"><span data-count="25">25</span></div>
+                        <div class="label">Common injuries in our library</div>
+                    </div>
+                    <div class="stat" data-reveal style="--d:1">
+                        <div class="big"><span data-count="5">5</span></div>
+                        <div class="label">Community partners</div>
+                    </div>
+                    <div class="stat" data-reveal style="--d:2">
+                        <div class="big">NYC</div>
+                        <div class="label">Youth teams across the city</div>
+                    </div>
+                </div>
             </div>
         </section>
-        
-        <section style="text-align: center; margin-top: 4rem;">
-            <h3 style="font-size: 1rem; color: #555; text-transform: uppercase; letter-spacing: 1px;">Follow our Instagram!</h3>
-            
-            <a href="https://www.instagram.com/beyondthegamewellness" target="_blank" style="text-decoration: none; color: var(--text-black); display: inline-flex; align-items: center; justify-content: center; gap: 10px; margin-top: 0.5rem;">
-                <img src="instagram-logo.png" alt="Instagram Logo" style="width: 30px; height: 30px; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
-                <span style="font-size: 1.1rem; font-weight: 600; color: var(--primary-green);">@beyondthegamewellness</span>
-            </a>
+ 
+        <section class="section" style="padding-top:0">
+            <div class="wrap features">
+                <a href="injurylibrary.html" class="feature" data-reveal="scale">
+                    <span class="tag">25 injuries</span>
+                    <svg class="feature-art" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 8 3.4 4.5 6.9 4.5c2 0 3.6 1.1 5.1 3 1.5-1.9 3.1-3 5.1-3 3.5 0 5.5 3.5 4.2 6.8-1.8 4.6-9.3 9.2-9.3 9.2z"/><path d="M5.5 12h3l1.5-2.5 2 5 1.5-2.5h5"/></svg>
+                    <div>
+                        <h3>Injury<br>Library</h3>
+                        <p>Causes, symptoms, treatment, and prevention for the 25 most common injuries in sports.</p>
+                        <span class="go"><i>→</i> Explore the library</span>
+                    </div>
+                </a>
+                <a href="events.html" class="feature dark" data-reveal="scale" style="--d:2">
+                    <span class="tag">Giveaways · Tournaments</span>
+                    <svg class="feature-art" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M7 6H4v1a3 3 0 0 0 3 3M17 6h3v1a3 3 0 0 1-3 3M12 14v4M8 21h8M9.5 18h5"/></svg>
+                    <div>
+                        <h3>Upcoming<br>Events</h3>
+                        <p>Sign up for our exciting giveaways and tournaments!</p>
+                        <span class="go"><i>→</i> See what's next</span>
+                    </div>
+                </a>
+            </div>
         </section>
-
-        <section style="text-align: center; margin-top: 2rem; margin-bottom: 2rem;">
-            <h3 style="font-size: 1rem; color: #555; text-transform: uppercase; letter-spacing: 1px;">Contact Us</h3>
-            
-            <a href="mailto:beyondthegameoutreach@gmail.com" style="text-decoration: none; color: var(--text-black); display: inline-flex; align-items: center; justify-content: center; gap: 10px; margin-top: 0.5rem;">
-                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="var(--primary-green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
-                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                    <polyline points="22,6 12,13 2,6"></polyline>
-                </svg>
-                <span style="font-size: 1.1rem; font-weight: 600; color: var(--primary-green);">beyondthegameoutreach@gmail.com</span>
-            </a>
+ 
+    <div class="marquee green" aria-hidden="true">
+        <div class="marquee-track"><span>Youth Basketball League <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 8 3.4 4.5 6.9 4.5c2 0 3.6 1.1 5.1 3 1.5-1.9 3.1-3 5.1-3 3.5 0 5.5 3.5 4.2 6.8-1.8 4.6-9.3 9.2-9.3 9.2z"/><path d="M5.5 12h3l1.5-2.5 2 5 1.5-2.5h5"/></svg></span><span>Tiny Ballers Rego <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 8 3.4 4.5 6.9 4.5c2 0 3.6 1.1 5.1 3 1.5-1.9 3.1-3 5.1-3 3.5 0 5.5 3.5 4.2 6.8-1.8 4.6-9.3 9.2-9.3 9.2z"/><path d="M5.5 12h3l1.5-2.5 2 5 1.5-2.5h5"/></svg></span><span>Project Copybara <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 8 3.4 4.5 6.9 4.5c2 0 3.6 1.1 5.1 3 1.5-1.9 3.1-3 5.1-3 3.5 0 5.5 3.5 4.2 6.8-1.8 4.6-9.3 9.2-9.3 9.2z"/><path d="M5.5 12h3l1.5-2.5 2 5 1.5-2.5h5"/></svg></span><span>SLT Hoops <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 8 3.4 4.5 6.9 4.5c2 0 3.6 1.1 5.1 3 1.5-1.9 3.1-3 5.1-3 3.5 0 5.5 3.5 4.2 6.8-1.8 4.6-9.3 9.2-9.3 9.2z"/><path d="M5.5 12h3l1.5-2.5 2 5 1.5-2.5h5"/></svg></span><span>St. Roberts Basketball <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 8 3.4 4.5 6.9 4.5c2 0 3.6 1.1 5.1 3 1.5-1.9 3.1-3 5.1-3 3.5 0 5.5 3.5 4.2 6.8-1.8 4.6-9.3 9.2-9.3 9.2z"/><path d="M5.5 12h3l1.5-2.5 2 5 1.5-2.5h5"/></svg></span><span>Youth Basketball League <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 8 3.4 4.5 6.9 4.5c2 0 3.6 1.1 5.1 3 1.5-1.9 3.1-3 5.1-3 3.5 0 5.5 3.5 4.2 6.8-1.8 4.6-9.3 9.2-9.3 9.2z"/><path d="M5.5 12h3l1.5-2.5 2 5 1.5-2.5h5"/></svg></span><span>Tiny Ballers Rego <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 8 3.4 4.5 6.9 4.5c2 0 3.6 1.1 5.1 3 1.5-1.9 3.1-3 5.1-3 3.5 0 5.5 3.5 4.2 6.8-1.8 4.6-9.3 9.2-9.3 9.2z"/><path d="M5.5 12h3l1.5-2.5 2 5 1.5-2.5h5"/></svg></span><span>Project Copybara <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 8 3.4 4.5 6.9 4.5c2 0 3.6 1.1 5.1 3 1.5-1.9 3.1-3 5.1-3 3.5 0 5.5 3.5 4.2 6.8-1.8 4.6-9.3 9.2-9.3 9.2z"/><path d="M5.5 12h3l1.5-2.5 2 5 1.5-2.5h5"/></svg></span><span>SLT Hoops <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 8 3.4 4.5 6.9 4.5c2 0 3.6 1.1 5.1 3 1.5-1.9 3.1-3 5.1-3 3.5 0 5.5 3.5 4.2 6.8-1.8 4.6-9.3 9.2-9.3 9.2z"/><path d="M5.5 12h3l1.5-2.5 2 5 1.5-2.5h5"/></svg></span><span>St. Roberts Basketball <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 8 3.4 4.5 6.9 4.5c2 0 3.6 1.1 5.1 3 1.5-1.9 3.1-3 5.1-3 3.5 0 5.5 3.5 4.2 6.8-1.8 4.6-9.3 9.2-9.3 9.2z"/><path d="M5.5 12h3l1.5-2.5 2 5 1.5-2.5h5"/></svg></span><span>Youth Basketball League <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 8 3.4 4.5 6.9 4.5c2 0 3.6 1.1 5.1 3 1.5-1.9 3.1-3 5.1-3 3.5 0 5.5 3.5 4.2 6.8-1.8 4.6-9.3 9.2-9.3 9.2z"/><path d="M5.5 12h3l1.5-2.5 2 5 1.5-2.5h5"/></svg></span><span>Tiny Ballers Rego <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 8 3.4 4.5 6.9 4.5c2 0 3.6 1.1 5.1 3 1.5-1.9 3.1-3 5.1-3 3.5 0 5.5 3.5 4.2 6.8-1.8 4.6-9.3 9.2-9.3 9.2z"/><path d="M5.5 12h3l1.5-2.5 2 5 1.5-2.5h5"/></svg></span><span>Project Copybara <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 8 3.4 4.5 6.9 4.5c2 0 3.6 1.1 5.1 3 1.5-1.9 3.1-3 5.1-3 3.5 0 5.5 3.5 4.2 6.8-1.8 4.6-9.3 9.2-9.3 9.2z"/><path d="M5.5 12h3l1.5-2.5 2 5 1.5-2.5h5"/></svg></span><span>SLT Hoops <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 8 3.4 4.5 6.9 4.5c2 0 3.6 1.1 5.1 3 1.5-1.9 3.1-3 5.1-3 3.5 0 5.5 3.5 4.2 6.8-1.8 4.6-9.3 9.2-9.3 9.2z"/><path d="M5.5 12h3l1.5-2.5 2 5 1.5-2.5h5"/></svg></span><span>St. Roberts Basketball <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 8 3.4 4.5 6.9 4.5c2 0 3.6 1.1 5.1 3 1.5-1.9 3.1-3 5.1-3 3.5 0 5.5 3.5 4.2 6.8-1.8 4.6-9.3 9.2-9.3 9.2z"/><path d="M5.5 12h3l1.5-2.5 2 5 1.5-2.5h5"/></svg></span><span>Youth Basketball League <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 8 3.4 4.5 6.9 4.5c2 0 3.6 1.1 5.1 3 1.5-1.9 3.1-3 5.1-3 3.5 0 5.5 3.5 4.2 6.8-1.8 4.6-9.3 9.2-9.3 9.2z"/><path d="M5.5 12h3l1.5-2.5 2 5 1.5-2.5h5"/></svg></span><span>Tiny Ballers Rego <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 8 3.4 4.5 6.9 4.5c2 0 3.6 1.1 5.1 3 1.5-1.9 3.1-3 5.1-3 3.5 0 5.5 3.5 4.2 6.8-1.8 4.6-9.3 9.2-9.3 9.2z"/><path d="M5.5 12h3l1.5-2.5 2 5 1.5-2.5h5"/></svg></span><span>Project Copybara <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 8 3.4 4.5 6.9 4.5c2 0 3.6 1.1 5.1 3 1.5-1.9 3.1-3 5.1-3 3.5 0 5.5 3.5 4.2 6.8-1.8 4.6-9.3 9.2-9.3 9.2z"/><path d="M5.5 12h3l1.5-2.5 2 5 1.5-2.5h5"/></svg></span><span>SLT Hoops <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 8 3.4 4.5 6.9 4.5c2 0 3.6 1.1 5.1 3 1.5-1.9 3.1-3 5.1-3 3.5 0 5.5 3.5 4.2 6.8-1.8 4.6-9.3 9.2-9.3 9.2z"/><path d="M5.5 12h3l1.5-2.5 2 5 1.5-2.5h5"/></svg></span><span>St. Roberts Basketball <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 8 3.4 4.5 6.9 4.5c2 0 3.6 1.1 5.1 3 1.5-1.9 3.1-3 5.1-3 3.5 0 5.5 3.5 4.2 6.8-1.8 4.6-9.3 9.2-9.3 9.2z"/><path d="M5.5 12h3l1.5-2.5 2 5 1.5-2.5h5"/></svg></span></div>
+    </div>
+ 
+        <section class="section">
+            <div class="wrap">
+                <p class="eyebrow" data-reveal>Collaborations</p>
+                <h2 class="lines"><span class="line"><span>Who we've</span></span><span class="line"><span>teamed up with</span></span></h2>
+                <ul class="partners">
+                    <li data-reveal><a href="collaborations.html#ybl"><span class="p-idx">01</span><span class="p-name" style="flex:1">Youth Basketball League</span><span class="p-arrow">→</span></a></li>
+                    <li data-reveal style="--d:1"><a href="collaborations.html#tiny-ballers"><span class="p-idx">02</span><span class="p-name" style="flex:1">Tiny Ballers Rego</span><span class="p-arrow">→</span></a></li>
+                    <li data-reveal style="--d:2"><a href="collaborations.html#project-copybara"><span class="p-idx">03</span><span class="p-name" style="flex:1">Project Copybara</span><span class="p-arrow">→</span></a></li>
+                    <li data-reveal style="--d:3"><a href="collaborations.html#slt-hoops"><span class="p-idx">04</span><span class="p-name" style="flex:1">SLT Hoops</span><span class="p-arrow">→</span></a></li>
+                    <li data-reveal style="--d:4"><a href="collaborations.html#st-roberts"><span class="p-idx">05</span><span class="p-name" style="flex:1">St. Roberts Basketball</span><span class="p-arrow">→</span></a></li>
+                </ul>
+            </div>
+        </section>
+ 
+        <section class="section" style="padding-top:0">
+            <div class="wrap">
+                <div class="cta-band" data-reveal="scale">
+                    <svg class="pulse-line " viewBox="0 0 1200 80" preserveAspectRatio="none" aria-hidden="true"><path class="trace" d="M0 50 H380 L400 50 L412 32 L426 50 L446 50 L460 6 L478 78 L494 36 L506 50 H760 L772 50 L782 40 L794 50 H1200"/></svg>
+                    <p class="eyebrow on-dark">Get involved</p>
+                    <h2>Bring us to your team.</h2>
+                    <p style="max-width:46ch;color:rgba(255,255,255,.85);margin:0">Coaches, parents, and leagues: reach out and we'll come teach your athletes how to stay healthy and in the game.</p>
+                    <a href="mailto:beyondthegameoutreach@gmail.com" class="btn light">Email us <span class="arrow">→</span></a>
+                </div>
+ 
+                <div class="connect">
+                    <a href="https://www.instagram.com/beyondthegamewellness" target="_blank" rel="noopener" data-reveal>
+                        <span class="c-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/></svg></span>
+                        <span><small>Follow our Instagram</small><strong>@beyondthegamewellness</strong></span>
+                    </a>
+                    <a href="mailto:beyondthegameoutreach@gmail.com" data-reveal style="--d:1">
+                        <span class="c-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="M3 6.5l9 6.5 9-6.5"/></svg></span>
+                        <span><small>Contact us</small><strong>beyondthegameoutreach@gmail.com</strong></span>
+                    </a>
+                </div>
+            </div>
         </section>
     </main>
-    
-    <footer>
-        <p>&copy; 2026 Beyond the Game Wellness. All rights reserved.</p>
+ 
+    <footer class="site-footer">
+        <div class="wrap">
+            <div class="footer-top">
+                <div>
+                    <h4>Beyond the Game Wellness</h4>
+                    <p>Teaching young athletes across NYC how to prevent, recognize, and recover from sports injuries.</p>
+                </div>
+                <div>
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="injurylibrary.html">Injury Library</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="collaborations.html">Collaborations</a></li>
+                        <li><a href="about.html">Our Mission</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="https://www.instagram.com/beyondthegamewellness" target="_blank" rel="noopener">Instagram ↗</a></li>
+                        <li><a href="mailto:beyondthegameoutreach@gmail.com">beyondthegameoutreach@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-word" aria-hidden="true"><span>B</span><span>e</span><span>y</span><span>o</span><span>n</span><span>d</span><span>&nbsp;</span><span>t</span><span>h</span><span>e</span><span>&nbsp;</span><span>G</span><span>a</span><span>m</span><span>e</span></div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Beyond the Game Wellness. All rights reserved.</p>
+                <a href="#top" class="to-top">Back to top ↑</a>
+            </div>
+        </div>
     </footer>
-
+ 
+    <script src="site.js"></script>
 </body>
 </html>
+ 
